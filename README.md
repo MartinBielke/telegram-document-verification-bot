@@ -1,1 +1,136 @@
-# telegram-document-verification-bot
+# 🤖 Telegram Eligibility Verification Bot
+
+A Python-based Telegram bot that performs fast record verification using a national ID number and generates consolidated reports from multiple administrative data sources.
+
+---
+
+## ✨ Features
+
+- 🔍 Search records by National ID
+- 🤖 Telegram conversational interface
+- 🔄 Automatic data refresh
+- 📊 Consolidated verification reports
+- 🗂️ Multiple data source integration
+- ⚡ Lightweight and easy to deploy
+
+---
+
+## 🏗️ Architecture
+
+```text
+User
+  │
+  ▼
+Telegram Bot
+  │
+  ▼
+Data Source (CSV / Google Sheets)
+  │
+  ▼
+Verification Engine
+  │
+  ▼
+Formatted Report
+````
+
+---
+
+## 🚀 Quick Start
+
+### Clone the repository
+
+```bash
+git clone https://github.com/yourusername/telegram-eligibility-verification-bot.git
+cd telegram-eligibility-verification-bot
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Configure environment variables
+
+```env
+TELEGRAM_TOKEN=YOUR_TOKEN
+CSV_URL=YOUR_DATA_SOURCE_URL
+```
+
+### Run
+
+```bash
+python bot.py
+```
+
+---
+
+## 💬 Commands
+
+| Command   | Description                |
+| --------- | -------------------------- |
+| `/start`  | Start a verification query |
+| `/status` | Check database status      |
+| `/cancel` | Cancel current operation   |
+
+---
+
+## 🛠️ Tech Stack
+
+* Python
+* Pandas
+* Requests
+* python-telegram-bot
+* Google Sheets CSV API
+
+---
+
+## 📂 Project Structure
+
+```text
+telegram-eligibility-verification-bot/
+│
+├── bot.py
+├── requirements.txt
+├── README.md
+├── sample.env
+├── sample_data.csv
+└── .gitignore
+```
+
+---
+
+## 🔒 Security & Privacy
+
+This repository does not contain real personal information.
+
+Any included datasets are fully anonymized and intended exclusively for demonstration purposes.
+
+---
+
+## 📈 Future Improvements
+
+* PostgreSQL backend
+* Docker deployment
+* REST API integration
+* Authentication layer
+* Audit logs
+* Analytics dashboard
+
+---
+
+## 📄 License
+
+MIT License
+
+````
+
+Y un detalle importante: para GitHub en 2026, un README con una imagen o GIF arriba suele impresionar más que los emojis. Por ejemplo:
+# 🤖 Telegram Eligibility Verification Bot
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Telegram](https://img.shields.io/badge/Telegram-Bot-blue)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+````
+
