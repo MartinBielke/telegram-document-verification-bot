@@ -112,6 +112,14 @@ is therefore not distributed.
 
 ---
 
+## Environment Variables
+
+Create a `.env` file:
+
+```env
+TELEGRAM_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
+CSV_URL=YOUR_CSV_SOURCE_URL
+
 ## 📈 Future Improvements
 
 * PostgreSQL backend
