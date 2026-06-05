@@ -1,17 +1,18 @@
 # 🤖 Telegram Eligibility Verification Bot
 
-A Python-based Telegram bot that performs fast record verification using a national ID number and generates consolidated reports from multiple administrative data sources.
+A Python-based Telegram bot that performs fast record verification using a National ID number and generates consolidated reports from multiple administrative data sources.
 
 ---
 
 ## ✨ Features
 
-- 🔍 Search records by National ID
-- 🤖 Telegram conversational interface
-- 🔄 Automatic data refresh
-- 📊 Consolidated verification reports
-- 🗂️ Multiple data source integration
-- ⚡ Lightweight and easy to deploy
+* 🔍 Search records by National ID
+* 🤖 Telegram conversational interface
+* 🔄 Automatic data refresh
+* 📊 Consolidated verification reports
+* 🗂️ Multiple data source integration
+* 📁 Local CSV or Google Sheets support
+* ⚡ Lightweight and easy to deploy
 
 ---
 
@@ -31,7 +32,7 @@ Verification Engine
   │
   ▼
 Formatted Report
-````
+```
 
 ---
 
@@ -50,11 +51,13 @@ cd telegram-eligibility-verification-bot
 pip install -r requirements.txt
 ```
 
-### Configure environment variables
+### Create a `.env` file
 
 ```env
-TELEGRAM_TOKEN=YOUR_TOKEN
-CSV_URL=YOUR_DATA_SOURCE_URL
+TELEGRAM_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
+
+# Optional
+CSV_URL=YOUR_CSV_SOURCE_URL
 ```
 
 ### Run
@@ -62,6 +65,8 @@ CSV_URL=YOUR_DATA_SOURCE_URL
 ```bash
 python bot.py
 ```
+
+If `CSV_URL` is not provided, the application automatically loads `sample_data.csv`.
 
 ---
 
@@ -81,6 +86,7 @@ python bot.py
 * Pandas
 * Requests
 * python-telegram-bot
+* python-dotenv
 * Google Sheets CSV API
 
 ---
@@ -90,37 +96,45 @@ python bot.py
 ```
 telegram-eligibility-verification-bot/
 │
-├── bot.py
+├── telegram_eligibility_verification_bot.ipynb
 ├── requirements.txt
 ├── README.md
 ├── LICENSE
 ├── sample.env
 ├── sample_data.csv
-├── .gitignore
-└── notebook.ipynb
+└── .gitignore
+
 ```
 
 ---
 
-## Dataset
+## 📄 Sample Dataset
 
-This repository does not contain real records.
+This repository includes a synthetic dataset (`sample_data.csv`) that mirrors the structure of the production database.
 
-The included dataset is fully synthetic and intended exclusively
-for testing and demonstration purposes.
+All records are fictional and provided exclusively for testing and demonstration purposes.
 
-The original production dataset contains sensitive information and
-is therefore not distributed.
+No real personal information is included in this repository.
 
 ---
 
-## Environment Variables
+## 🔐 Environment Variables
 
-Create a `.env` file:
+Create a `.env` file in the project root:
 
 ```env
 TELEGRAM_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
+
+# Optional
 CSV_URL=YOUR_CSV_SOURCE_URL
+```
+
+### Behavior
+
+* If `CSV_URL` is configured, the bot loads data from the remote CSV source.
+* If `CSV_URL` is omitted, the bot automatically uses `sample_data.csv`.
+
+---
 
 ## 📈 Future Improvements
 
@@ -135,7 +149,5 @@ CSV_URL=YOUR_CSV_SOURCE_URL
 
 ## 📄 License
 
-MIT License
-
-````
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
