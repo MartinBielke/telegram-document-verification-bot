@@ -134,7 +134,6 @@ CSV_URL=YOUR_CSV_SOURCE_URL
 ## 📄 License
 
 MIT License
-![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+
 ````
 
