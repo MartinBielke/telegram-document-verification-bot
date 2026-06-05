@@ -122,14 +122,6 @@ Any included datasets are fully anonymized and intended exclusively for demonstr
 ## 📄 License
 
 MIT License
-
-````
-
-Y un detalle importante: para GitHub en 2026, un README con una imagen o GIF arriba suele impresionar más que los emojis. Por ejemplo:
-# 🤖 Telegram Eligibility Verification Bot
-
-![Python](https://img.shields.io/badge/Python-3.11-blue)
-![Telegram](https://img.shields.io/badge/Telegram-Bot-blue)
 ![Pandas](https://img.shields.io/badge/Pandas-Data%20Processing-green)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 ````
