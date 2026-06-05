@@ -100,11 +100,15 @@ telegram-eligibility-verification-bot/
 
 ---
 
-## 🔒 Security & Privacy
+# Dataset
 
-This repository does not contain real personal information.
+This repository does not contain real records.
 
-Any included datasets are fully anonymized and intended exclusively for demonstration purposes.
+The included dataset is fully synthetic and intended exclusively
+for testing and demonstration purposes.
+
+The original production dataset contains sensitive information and
+is therefore not distributed.
 
 ---
 
