@@ -87,15 +87,17 @@ python bot.py
 
 ## 📂 Project Structure
 
-```text
+```
 telegram-eligibility-verification-bot/
 │
 ├── bot.py
 ├── requirements.txt
 ├── README.md
+├── LICENSE
 ├── sample.env
 ├── sample_data.csv
-└── .gitignore
+├── .gitignore
+└── notebook.ipynb
 ```
 
 ---
