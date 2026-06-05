@@ -8,8 +8,8 @@
 # =========================
 real_data.csv
 production_data.csv
-*.xlsx
-*.xls
+real_data.xlsx
+production_data.xlsx
 
 # =========================
 # Python
