@@ -120,6 +120,8 @@ No real personal information is included in this repository.
 
 ## 🔐 Environment Variables
 
+The `.env` file must be created locally and is intentionally excluded from version control.
+
 Create a `.env` file in the project root:
 
 ```env
@@ -128,6 +130,22 @@ TELEGRAM_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
 # Optional
 CSV_URL=YOUR_CSV_SOURCE_URL
 ```
+
+## 🔐 Environment Variables
+
+Create a `.env` file in the project root.
+
+The `.env` file is used for local configuration and is intentionally excluded from version control.
+
+```env
+TELEGRAM_TOKEN=YOUR_TELEGRAM_BOT_TOKEN
+
+# Optional
+CSV_URL=YOUR_CSV_SOURCE_URL
+```
+
+A `sample.env` file is included as   a template. If `CSV_URL` is not provided, the application will automatically load `sample_data.csv`.
+
 
 ### Behavior
 
